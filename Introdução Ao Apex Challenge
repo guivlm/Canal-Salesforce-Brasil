@@ -1,4 +1,4 @@
-public class StringArrayTest1  {
+public class StringArrayTest  {
 
   public static List<String> generateStringArray (Integer count){
     
