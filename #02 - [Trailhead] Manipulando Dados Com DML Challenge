@@ -1,0 +1,16 @@
+public class AccountHandler {
+    
+    public static Account insertNewAccount (String nomeAccount){
+        
+        try{
+          	Account criacaoConta = new Account(Name = nomeAccount);
+          
+            insert criacaoConta;
+            return criacaoConta;
+            
+        }catch(exception e){
+            
+            return null;
+        }
+    }
+}
