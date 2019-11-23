@@ -1,0 +1,43 @@
+//Undefined 
+var myUndefinedVar;
+console.log(typeof(myUndefinedVar));
+
+//Null
+var myUndefinedNull = null;
+console.log(typeof(myUndefinedNull));
+
+//Number
+let myNumber = 100.0;
+console.log('type: ' + typeof(myNumber) + ' && value: ' + myNumber);
+
+//String
+let myString = "HelloWorld";
+console.log('type: ' + typeof(myString) + ' && value: ' + myString);
+
+//Object
+let myObject = {
+                  attribute1: 'myValue1', 
+                  atttribute2: 2
+               };
+
+console.log(typeof(myObject));
+console.log(typeof(myObject.attribute1));
+console.log(typeof(myObject.atttribute2));
+//console.log(typeof(myObject[atttribute]));
+
+//Array
+let myArray = ['value1', 2];
+console.log(typeof(myArray));
+console.log(typeof(myArray[0]));
+console.log(typeof(myArray[1]));
+
+let myArray2 = new Array('value1', 2);
+console.log(typeof(myArray));
+console.log(typeof(myArray[0]));
+console.log(typeof(myArray[1]));
+
+//boolean
+let myBoolean = true;
+let myBoolean2 = false;
+console.log('type: ' + typeof(myBoolean) + ' && value: ' + myBoolean);
+console.log('type: ' + typeof(myBoolean2) + ' && value: ' + myBoolean2);
