@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Oportunidades Relacionadas" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={opportunityData} for:item="opportunity">
+                <lightning-card title={opportunity.Name} icon-name="custom:custom17" key={opportunity.Id}>
+                    <li class="slds-m-left_large">
+                        <p class="slds-text-heading_small">
+                            Id: {opportunity.Id}
+                        </p>
+                        <p class="slds-text-heading_small">
+                            Valor: {opportunity.Amount}
+                        </p>
+                        <p class="slds-text-heading_small">
+                            Stage: {opportunity.StageName}
+                        </p>
+                        <p class="slds-text-heading_small"> 
+                            Tipo: {opportunity.Type}
+                        </p>
+                        <p class="slds-text-heading_small">
+                            Data de criação: {opportunity.CreatedDate}
+                        </p>
+                    </li>
+                </lightning-card>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
